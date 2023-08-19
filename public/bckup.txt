@@ -1,0 +1,47 @@
+import React from 'react'
+import { Button, Col, Container, Image, Row } from 'react-bootstrap'
+import { Heart } from 'react-bootstrap-icons'
+
+const CategoryBody = () => {
+    return (
+        <div>
+            <h2 className='my-3 text-center'>Electronics</h2>
+            <Container className='mx-auto my-3'>
+                <Row className='mx-auto my-3'>
+                    <Col className='' xl={4}>
+                        <Image src='https://image01.realme.net/general/20220429/1651221270436.png.webp' fluid />
+                        <p className='text-center'>Realme GT Neo 3</p>
+                        <h6 className='text-center'>$2444</h6>
+                        <div className='d-flex justify-content-center align-items-center'>
+                            <Button className='mx-2'>Buy</Button>
+                            <Button variant='success' className='mx-2'>Add to cart</Button>
+                            <a href='#toWishlist'><Heart color='red' className='mx-2' size={25} /></a>
+                        </div>
+                    </Col>
+                    <Col className='' xl={4}>
+                        <Image src='https://assets.nikshanonline.com/wp-content/uploads/2022/08/1-171-scaled.jpg' fluid />
+                        <p className='text-center'>Onida 64 inch</p>
+                        <h6 className='text-center'>$3344</h6>
+                        <div className='d-flex justify-content-center align-items-center'>
+                            <Button className='mx-2'>Buy</Button>
+                            <Button variant='success' className='mx-2'>Add to cart</Button>
+                            <a href='#toWishlist'><Heart color='red' className='mx-2' size={25} /></a>
+                        </div>
+                    </Col>
+                    <Col className='' xl={4}>
+                        <Image className='my-2' src='https://rukminim2.flixcart.com/image/850/1000/kh0vonk0/computer/f/j/g/acer-na-gaming-laptop-original-imafx4u9yyzuzffx.jpeg?q=90' fluid />
+                        <p className='text-center'>Acer Predator</p>
+                        <h6 className='text-center'>$7354</h6>
+                        <div className='d-flex justify-content-center align-items-center'>
+                            <Button className='mx-2'>Buy</Button>
+                            <Button variant='success' className='mx-2'>Add to cart</Button>
+                            <a href='#toWishlist'><Heart color='red' className='mx-2' size={25} /></a>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+    )
+}
+
+export default CategoryBody
